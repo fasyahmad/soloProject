@@ -18,6 +18,11 @@
 html,body{
     height: 100%;
 }
+
+body{
+    color: #212226;
+}
+
 h1,
 h2,
 h3,
@@ -168,13 +173,13 @@ section{
 =========================================================== */
 #arrow-down{
     position: absolute;
-    left: 50%;
+    left: 49%;
     bottom: 20px;
     color: #fff;
     font-size: 32px;
     height: 32px;
     text-align: center;
-    margin-left: 16px;
+    margin-right: 16px;
     z-index: 1;
 }
 
@@ -182,3 +187,116 @@ section{
 #arrow-down:hover{
     color: #f4c613;
 }
+/* ========================================================
+                      content boxes
+=========================================================== */
+.content-box-lg{
+    padding: 120px 0;  
+}
+.content-box-md{
+padding: 100px 0;
+}
+/* ========================================================
+                    vertical heading
+=========================================================== */
+.vertical-heading h5{
+    font-size: 14px;
+    color: #f4c613;
+    font-weight: 500;
+    text-transform: uppercase;
+    word-spacing: 9px;
+    display: inline-block;
+    position: relative;
+    left: -65px;
+    top: 60px;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+
+.vertical-heading h2{
+    margin: 0 0 0 30px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+/* ========================================================
+                        about 01
+=========================================================== */
+#about-right p:first-child{
+    margin-bottom: 30px;
+}
+
+#about-bottom{
+    margin-top: 60px;
+}
+
+#about-bottom img{
+    margin: 0 auto;
+}
+
+/* ========================================================
+                        about 02
+=========================================================== */
+#about-02{
+    background-color: #f4f4f4;
+}
+
+.about-item{
+    background-color: #fff;
+    padding: 80px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.about-item i{
+    font-size: 42px;
+    margin: 0;
+}
+
+.about-item hr {
+    width: 45px;
+    height: 3px;
+    background-color: #f4c613;
+    margin: 0 auto;
+    border: none;
+}
+
+.about-item>p{
+    margin-top: 20px;
+}
+
+.about-item:hover{
+    background-color: #f4c613;
+}
+.about-item:hover i,
+.about-item:hover p,
+.about-item:hover h3 {
+    color: #fff;
+}
+
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+.about-item{
+    transition: all 400ms ease-in-out;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -ms-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+}
+
+.about-item:hover i{
+    transition: all 400ms ease-in ;
+    alltransform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    -webkit-transition: all 400ms ease-in ;
+    -moz-transition: all 400ms ease-in ;
+    -ms-transition: all 400ms ease-in ;
+    -o-transition: all 400ms ease-in ;
+}
+
