@@ -10,6 +10,16 @@ $(window).on('load', function(){
 /* ========================================================
                         team
 =========================================================== */
+
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel").owlCarousel({
+        items:2,
+        autoplay: true,
+        smartSpeed: 700,
+        loop: true,
+        autoPlayHoverPause: true,
+        nav: true,
+        dots: false,
+        // navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
 });
