@@ -6,3 +6,10 @@ $(window).on('load', function(){
     $("#preloader").delay(1000).fadeOut('slow');
 
 })
+
+/* ========================================================
+                        team
+=========================================================== */
+$(document).ready(function () {
+    $(".owl-carousel").owlCarousel();
+});
