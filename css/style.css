@@ -197,7 +197,7 @@ section{
 padding: 100px 0;
 }
 /* ========================================================
-                    vertical heading
+                    vertical/horizontal heading
 =========================================================== */
 .vertical-heading h5{
     font-size: 14px;
@@ -216,12 +216,32 @@ padding: 100px 0;
     -o-transform: rotate(-90deg);
 }
 
+.horizontal-heading{
+    margin-bottom: 80px;
+}
+
+.horizontal-heading h5{
+    color: #f4c613;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.horizontal-heading h2{
+    margin: 0;
+}
+
 .vertical-heading h2{
     margin: 0 0 0 30px;
+    
+}
+.vertical-heading h2,
+.horizontal-heading h2{
     font-size: 42px;
     font-weight: 100;
     line-height: 45px;
 }
+
 /* ========================================================
                         about 01
 =========================================================== */
@@ -396,4 +416,123 @@ ul.social-list li:nth-child(3) a:hover {
     border: transparent;
 }
 
+/*===================================================
+                    Slider Buttons
+===================================================== */
 
+
+/*===================================================
+                        Skill
+===================================================== */
+.skill{
+    margin-bottom: 20px;
+}
+
+.skill h4{
+    line-height: 60px;
+    margin: 0;
+    font-weight: normal;
+}
+ */
+.progress{
+    /* ini belom masuk */
+    height: 25px;
+    background: #f4c613;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    overflow: visible;
+
+}
+
+.progress .progress-bar{
+    background-color: #f4c613;
+    position: relative;
+}
+
+.progress-bar span{
+    font-size: 10px;
+    color: #f4f4f4; 
+    font-weight: 200;
+    font-family: "Open Sans", sans-serif;
+    /* background: #212226  ; */
+    padding: 2px;
+    position: absolute;
+    left: 93%;
+}
+
+/*===================================================
+                        statment
+===================================================== */
+
+#statment{
+    background: url(../img/tech/tech-quote.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+#statment .content-box-lg{
+    background: rgba(0, 0, 0, 0.3)
+}
+
+#tech-statment h3{
+    color: #fff;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;   
+    font-size: 28px;
+}
+
+#tech-statment p{
+    color: #f4c613;
+    font-size: 14px;
+}
+
+/*===================================================
+                        services
+===================================================== */
+.col-md-7 img{
+    margin: 60px 0;
+}
+
+.service {
+    margin: 30px 0;
+}
+
+.service .icon{
+    font-size: 42px;
+    margin: 0;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+
+.service:hover .icon{
+    color: #f4c613;
+    transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+}
+
+.service h5{
+    font-size: 12px;
+    color: #f4c613;
+    text-transform: uppercase;
+    margin: 0 0 6px 0;
+}
+
+.service:hover h5{
+    color: #212226;
+}
+
+.service h4{
+    font-size: 24px;
+    margin: 0 0 8px 0;
+} 
+
+.service p{
+    line-height: normal;
+}
