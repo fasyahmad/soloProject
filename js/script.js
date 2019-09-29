@@ -45,7 +45,7 @@ $(function () {
 
 
 /* ========================================================
-                        progress bar
+                        responsive tabs
 =========================================================== */
 $(function() {
     $("#services-tabs").responsiveTabs({
@@ -53,3 +53,44 @@ $(function() {
         animation: 'slide', // The panels will slide up and down
     });
 })
+
+
+/* ========================================================
+                        Portofolio
+=========================================================== */
+
+$(window).on('load', function() {
+    // initialize isotop
+    $("#isotope-container").isotope({
+    });
+    // filter items on button click
+    $("#isotope-filters").on('click', 'button', function(){
+
+        // get filter value
+        var thisValue = $(this).attr("data-filter");
+
+        // filter portofolio
+        $("#isotope-container").isotope({
+            filter: thisValue
+        });
+        // active button
+        $("#isotope-filters").find(".active").removeClass("active");
+        $(this).addClass("active");
+
+    });
+});
+
+/* ========================================================
+                        Magnifier
+=========================================================== */
+
+$(function(){
+     $("#portfolio-wrapper").magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery :{
+            enabled : true
+        }
+        // other options
+    });
+});
