@@ -94,3 +94,20 @@ $(function(){
         // other options
     });
 });
+
+
+/* ========================================================
+                        Testimonial
+=========================================================== */
+$(document).ready(function () {
+    $("#testimonial-slider").owlCarousel({
+            items: 0,
+            autoplay: false,
+            smartSpeed: 700,
+            loop: true,
+            autoPlayHoverPause: true,
+            nav: true,
+            dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+});
