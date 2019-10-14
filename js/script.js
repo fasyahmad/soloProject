@@ -99,7 +99,7 @@ $(function(){
 /* ========================================================
                         Testimonial
 =========================================================== */
-$(document).ready(function () {
+$(function () {
     $("#testimonial-slider").owlCarousel({
             items: 0,
             autoplay: false,
@@ -108,6 +108,31 @@ $(document).ready(function () {
             autoPlayHoverPause: true,
             nav: true,
             dots: false,
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+    });
+});
+
+/* ========================================================
+                        Stats
+=========================================================== */
+$(function(){
+    $(".counter").counterUp({
+        delay : 10,
+        time : 5000
+    })
+})
+
+/* ========================================================
+                        client
+=========================================================== */
+$(function () {
+    $("#clients-list").owlCarousel({
+        autoplay: false,
+        smartSpeed: 700,
+        loop: true,
+        autoPlayHoverPause: true,
+        nav: true,
+        dots: false,
         navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
     });
 });
