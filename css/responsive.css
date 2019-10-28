@@ -1,0 +1,125 @@
+/*===================================================
+                bootsrap 3 media queries
+===================================================== */
+
+/* large devices (Destop & Laptops) */
+@media(min-width: 1200px) and (max-width: 1299px){
+    #home-heading h1
+    {
+        color: blueviolet;
+    }
+    .site-nav-wrapper {
+        padding: 20px;
+    }
+}
+
+/* medium device(lanscape tablet and medium desktops) */
+@media(min-width: 992px) and (max-width:1199px){
+    #home-heading h1
+    {
+        color: yellowgreen;
+    }
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    .vertical-heading h2{
+        font-size: 29px;
+    }
+    /* service 02 */
+    #service-tabs .tab.bg {
+        padding: 16px 30px;
+        min-height: 300px;
+    }
+    .sercive-tab p{
+        line-height: 20px;
+    }
+}
+
+/* small device(lanscape tablet and small desktops) */
+@media(min-width: 768px) and (max-width: 992px){
+
+    /* navigation */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+    #home-heading h1
+    {
+        font-size: 41px;
+    }
+
+    /* generic */
+    .btn-general{
+        padding: 8px 35px;
+        font-size: 10px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    /* tech statement */
+    #tech-statment h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* servoces 02 */
+    .r-tabs-accordion-title a{
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #f4c613;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        transition: border-color 300ms linear;
+        -moz-transition: border-color 300ms linear;
+        -ms-transition: border-color 300ms linear;
+        -o-transition: border-color 300ms linear;
+        -webkit-transition: border-color 300ms linear;
+    }
+    /* pricing */
+    .pricing-table .price h2{
+        margin: 0 0 0 6px;
+        font-size: 35px;
+    }
+
+    /* stat */
+    .stats-item p {
+        line-height: 18px;
+    }
+
+    /* contact */
+    ul.office-detail li{
+        margin-right: 15px;
+    }
+
+    ul.office-detail li i{
+        width: 25px;
+    }
+}
+
+/* Extra small device(lanscape tablet and small desktops) */
+@media(max-width: 767px) {
+
+    /* home */
+    #home-heading h1
+    {
+        font-size: 25px;
+    }
+    #home-text p{
+        font-size: 10px;
+    }
+
+    /* generic */
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+}
